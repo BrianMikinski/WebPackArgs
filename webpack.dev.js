@@ -6,10 +6,10 @@ module.exports = {
   entry: './src/index.js',
   mode: "development",
   devtool: "inline-source-map",
-  stats: "verbose",
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true
   },
   devServer: {
     contentBase: './dist',
