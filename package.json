@@ -6,10 +6,8 @@
   "private": true,
   "scripts": {
     "build": "webpack --config=webpack.config.js --progress --profile --color --env build=dev",
-    "build:prod": "webpack --config=webpack.config.js --progress --profile --colors --env build=prod",
-    "server": "webpack serve --open --config=webpack.config.js --progress --profile --color --env build=dev",
-    "buildRelease": "echo \"Error: no test specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:prod": "webpack --config=webpack.config.js --progress --profile --color --env build=prod",
+    "serve": "webpack serve --open --config=webpack.config.js --progress --profile --color --env build=dev"
   },
   "repository": {
     "type": "git",
@@ -27,6 +25,7 @@
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "terser-webpack-plugin": "^5.1.3"
   }
 }
