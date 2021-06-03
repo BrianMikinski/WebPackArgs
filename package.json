@@ -1,9 +1,14 @@
 {
-  "name": "WebPackArgs",
+  "name": "webpackargs",
   "version": "1.0.0",
   "description": "How to pass command line values to webpack",
   "main": "index.js",
+  "private": true,
   "scripts": {
+    "build": "webpack --config=webpack.config.js --progress --profile --color --env build=dev",
+    "build:prod": "webpack --config=webpack.config.js --progress --profile --colors --env build=prod",
+    "server": "webpack serve --open --config=webpack.config.js --progress --profile --color --env build=dev",
+    "buildRelease": "echo \"Error: no test specified\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +25,8 @@
   "devDependencies": {
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
