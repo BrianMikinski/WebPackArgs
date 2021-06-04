@@ -5,9 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "webpack --config=webpack.config.js --progress --profile --color --env build=dev",
-    "build:prod": "webpack --config=webpack.config.js --progress --profile --color --env build=prod",
-    "serve": "webpack serve --open --config=webpack.config.js --progress --profile --color --env build=dev"
+    "build": "webpack --config=webpack.config.js --env build=dev",
+    "build:prod": "webpack --config=webpack.config.js --env build=prod",
+    "serve": "webpack serve --open --config=webpack.config.js --env build=dev",
+    "serve:prod": "webpack serve --open --config=webpack.config.js --env build=prod"
   },
   "repository": {
     "type": "git",
