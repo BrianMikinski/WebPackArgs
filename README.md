@@ -22,8 +22,3 @@ npm run build:prod
 ```
 npm run serve:prod
 ```
-
-## Build Prod Project
-```
-npm run serve:prod
-```

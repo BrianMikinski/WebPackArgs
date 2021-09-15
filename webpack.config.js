@@ -2,6 +2,8 @@
 
 module.exports = (env, argv) => {
 
+    console.log(`Environment Build: ${env.build}`);
+
     switch (env.build) {
         case "prod":
             return require("./webpack.prod.js")
