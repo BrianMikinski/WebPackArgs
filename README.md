@@ -1,7 +1,8 @@
 # WebPackArgs
 How to pass command line values to webpack
 
-# Run Webpack Args Project
+# How to Run  the WebPackArgs Project
+Use the following commands to run the WebPackArgs project
 
 ## Build Develop Project
 ```
