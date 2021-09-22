@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config=webpack.config.js --env build=dev",
+    "build:noenv": "webpack --config=webpack.config.js",
     "build:prod": "webpack --config=webpack.config.js --env build=prod",
     "serve": "webpack serve --open --config=webpack.config.js --env build=dev",
     "serve:prod": "webpack serve --open --config=webpack.config.js --env build=prod"
